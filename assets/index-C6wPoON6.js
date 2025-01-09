@@ -290,7 +290,7 @@ ${o.toString()}`)}return s&&(typeof s=="string"?l+=`?${s}`:Object.keys(s).length
       </div>
     </div>
   </div>
-`}}Js.id="8c86e1bc53";function en(r,{$f7route:e,$store:a,$f7router:t}){const s=a.getters.products,n=e.params.id;let i;s.value.forEach(o=>{o.id===n&&(i=o)});const l=()=>{t.back()};return function(o){var c=o.$,d=o.$h,p=o.$root,u=o.$f7,h=o.$f7route,f=o.$f7router,m=o.$theme,v=o.$update,b=o.$store;return d`
+`}}Js.id="4b408f8dfd";function en(r,{$f7route:e,$store:a,$f7router:t}){const s=a.getters.products,n=e.params.id;let i;s.value.forEach(o=>{o.id===n&&(i=o)});const l=()=>{t.back()};return function(o){var c=o.$,d=o.$h,p=o.$root,u=o.$f7,h=o.$f7route,f=o.$f7router,m=o.$theme,v=o.$update,b=o.$store;return d`
   <div class="page" data-name="product">
     <div class="navbar">
       <div class="navbar-bg"></div>
@@ -324,7 +324,7 @@ ${o.toString()}`)}return s&&(typeof s=="string"?l+=`?${s}`:Object.keys(s).length
       </div>
     </div>
   </div>
-`}}en.id="525aca260e";function tn(){return function(r){var e=r.$,a=r.$h,t=r.$root,s=r.$f7,n=r.$f7route,i=r.$f7router,l=r.$theme,o=r.$update,c=r.$store;return a`
+`}}en.id="eec7d463ea";function tn(){return function(r){var e=r.$,a=r.$h,t=r.$root,s=r.$f7,n=r.$f7route,i=r.$f7router,l=r.$theme,o=r.$update,c=r.$store;return a`
     <div class="page" data-name="cart">
       <div class="navbar">
         <div class="navbar-bg"></div>
@@ -343,7 +343,7 @@ ${o.toString()}`)}return s&&(typeof s=="string"?l+=`?${s}`:Object.keys(s).length
       </div>
 
     </div>
-    `}}tn.id="8cf806ae63";function an(){return function(r){var e=r.$,a=r.$h,t=r.$root,s=r.$f7,n=r.$f7route,i=r.$f7router,l=r.$theme,o=r.$update,c=r.$store;return a`
+    `}}tn.id="5026e0bfd5";function an(){return function(r){var e=r.$,a=r.$h,t=r.$root,s=r.$f7,n=r.$f7route,i=r.$f7router,l=r.$theme,o=r.$update,c=r.$store;return a`
 <div class="page">
   <div class="navbar">
     <div class="navbar-bg"></div>
@@ -364,7 +364,7 @@ ${o.toString()}`)}return s&&(typeof s=="string"?l+=`?${s}`:Object.keys(s).length
     </div>
   </div>
 </div>
-`}}an.id="3bd7a2a6c5";var lu=[{path:"/",component:Js},{path:"/product/:id/",component:en},{path:"/cart/",component:tn},{path:"(.*)",component:an}];Xe.use([Ss]);Fe.use([bs,ws,ys,Es,Cs,Ts,nr,Ds,As,Ls,Rs,Hs,zs,Fs,Vs,Ns,qs,js]);const cu=_a({state:{products:[],carts:[]},getters:{products({state:r}){return r.products}},actions:{async fetchProducts({state:r},{app:e}={}){if(!e){console.error("Framework7 app instance is not provided!");return}console.log("fetchProducts: begin");try{const t=await(await fetch("http://localhost:8080/api/sheets/store")).json();r.products=t,console.log("fetchProducts: success")}catch(a){console.error("fetchProducts: error",a)}},addProduct({state:r},e){r.products=[...r.products,e]}}});function rn(r,{$f7:e,$update:a}){return function(t){var s=t.$,n=t.$h,i=t.$root,l=t.$f7,o=t.$f7route,c=t.$f7router,d=t.$theme,p=t.$update,u=t.$store;return n`
+`}}an.id="c59ad6c913";var lu=[{path:"/",component:Js},{path:"/product/:id/",component:en},{path:"/cart/",component:tn},{path:"(.*)",component:an}];Xe.use([Ss]);Fe.use([bs,ws,ys,Es,Cs,Ts,nr,Ds,As,Ls,Rs,Hs,zs,Fs,Vs,Ns,qs,js]);const cu=_a({state:{products:[],carts:[]},getters:{products({state:r}){return r.products}},actions:{async fetchProducts({state:r},{app:e}={}){if(!e){console.error("Framework7 app instance is not provided!");return}console.log("fetchProducts: begin");try{const t=await(await fetch("https://zizi-app.onrender.com/api/sheets/store")).json();r.products=t,console.log("fetchProducts: success")}catch(a){console.error("fetchProducts: error",a)}},addProduct({state:r},e){r.products=[...r.products,e]}}});function rn(r,{$f7:e,$update:a}){return function(t){var s=t.$,n=t.$h,i=t.$root,l=t.$f7,o=t.$f7route,c=t.$f7router,d=t.$theme,p=t.$update,u=t.$store;return n`
   <div id="app">
 
     <!-- Left panel with cover effect-->
@@ -438,4 +438,4 @@ ${o.toString()}`)}return s&&(typeof s=="string"?l+=`?${s}`:Object.keys(s).length
 
 
   </div>
-`}}rn.id="21a8040be0";var Fa=new Fe({name:"ZiZi Store",theme:"ios",el:"#app",component:rn,store:cu,routes:lu,serviceWorker:{path:"/service-worker.js"}});Fa.store.dispatch("fetchProducts",{app:Fa}).then(()=>{Fa.dialog.close(),console.log("app.store.dispatch, fetchProducts completed")});
+`}}rn.id="b1185be836";var Fa=new Fe({name:"ZiZi Store",theme:"ios",el:"#app",component:rn,store:cu,routes:lu,serviceWorker:{path:"/service-worker.js"}});Fa.store.dispatch("fetchProducts",{app:Fa}).then(()=>{Fa.dialog.close(),console.log("app.store.dispatch, fetchProducts completed")});
