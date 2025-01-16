@@ -331,7 +331,7 @@ ${u.toString()}`)}return a&&(typeof a=="string"?d+=`?${a}`:Object.keys(a).length
       </div>
     </div>
   </div>
-`}}Ul.id="5d5c773ea8";function fi(n,{$f7route:e,$store:t,$f7router:r}){const a=t.getters.products;console.log("product page: ",a);const i=e.params.id;let l;a.value.forEach(u=>{u.id===i&&(l=u)});const d=()=>{r.back()};return function(u){var f=u.$,g=u.$h,b=u.$root,w=u.$f7,x=u.$f7route,y=u.$f7router,E=u.$theme,S=u.$update,I=u.$store;return g`
+`}}Ul.id="f545862981";function fi(n,{$f7route:e,$store:t,$f7router:r}){const a=t.getters.products;console.log("product page: ",a);const i=e.params.id;let l;a.value.forEach(u=>{u.id===i&&(l=u)});const d=()=>{r.back()};return function(u){var f=u.$,g=u.$h,b=u.$root,w=u.$f7,x=u.$f7route,y=u.$f7router,E=u.$theme,S=u.$update,I=u.$store;return g`
   <div class="page" data-name="product">
     <div class="navbar" @click=${d}>
       <div class="navbar-bg gradient-bg"></div>
@@ -369,7 +369,7 @@ ${u.toString()}`)}return a&&(typeof a=="string"?d+=`?${a}`:Object.keys(a).length
       </div>
     </div>
   </div>
-`}}fi.id="34f44d1100";fi.style=`
+`}}fi.id="35b35eb597";fi.style=`
   /* Thiết lập cơ bản cho hình nền */
   .card-header {
     background-size: contain; /* Đảm bảo hình ảnh giữ nguyên tỷ lệ */
@@ -408,7 +408,7 @@ ${u.toString()}`)}return a&&(typeof a=="string"?d+=`?${a}`:Object.keys(a).length
       </div>
 
     </div>
-    `}}jl.id="c5982d8217";function Yl(n,{$f7:e,$onMounted:t,$onBeforeUnmount:r}){let a;const i=l=>{a&&(a.destroy(),a=null),a=e.popup.create({content:`
+    `}}jl.id="e9812f9b26";function Yl(n,{$f7:e,$onMounted:t,$onBeforeUnmount:r}){let a;const i=l=>{a&&(a.destroy(),a=null),a=e.popup.create({content:`
         <div class="popup">
           <div class="page">
             <div class="navbar">
@@ -452,7 +452,7 @@ ${u.toString()}`)}return a&&(typeof a=="string"?d+=`?${a}`:Object.keys(a).length
     
   </div>
 </div>
-`}}Yl.id="708e09e499";function Wl(){return function(n){var e=n.$,t=n.$h,r=n.$root,a=n.$f7,i=n.$f7route,l=n.$f7router,d=n.$theme,u=n.$update,f=n.$store;return t`
+`}}Yl.id="1b61e5895b";function Wl(){return function(n){var e=n.$,t=n.$h,r=n.$root,a=n.$f7,i=n.$f7route,l=n.$f7router,d=n.$theme,u=n.$update,f=n.$store;return t`
 <div class="page">
   <div class="navbar">
     <div class="navbar-bg"></div>
@@ -473,7 +473,7 @@ ${u.toString()}`)}return a&&(typeof a=="string"?d+=`?${a}`:Object.keys(a).length
     </div>
   </div>
 </div>
-`}}Wl.id="af006b76ce";var gm=[{path:"/",component:Ul},{path:"/product/:id/",component:fi},{path:"/cart/",component:jl},{path:"/setting/",component:Yl},{path:"(.*)",component:Wl}];mr.use([dl]);ir.use([tl,rl,nl,al,sl,cl,si,bl,ml,vl,wl,xl,El,yl,Cl,Tl,Sl,Al]);const mm=Ys({state:{products:[],category:[],carts:[]},getters:{category({state:n}){return n.category},products({state:n}){return n.products}},actions:{addProduct({state:n},e){n.products=[...n.products,e]},saveProduct({state:n},e){e.length>0&&localStorage.setItem("PRODUCT",JSON.stringify(e)),n.products=[...e],console.log("saveProduct: success ",e)},saveCategory({state:n},e){e.length>0&&localStorage.setItem("CATEGORY",JSON.stringify(e)),n.category=[...e],console.log("saveCategory: success ",e)}}});function Xl(n,{$f7:e,$update:t}){return function(r){var a=r.$,i=r.$h,l=r.$root,d=r.$f7,u=r.$f7route,f=r.$f7router,g=r.$theme,b=r.$update,w=r.$store;return i`
+`}}Wl.id="ff543123c0";var gm=[{path:"/",component:Ul},{path:"/product/:id/",component:fi},{path:"/cart/",component:jl},{path:"/setting/",component:Yl},{path:"(.*)",component:Wl}];mr.use([dl]);ir.use([tl,rl,nl,al,sl,cl,si,bl,ml,vl,wl,xl,El,yl,Cl,Tl,Sl,Al]);const mm=Ys({state:{products:[],category:[],carts:[]},getters:{category({state:n}){return n.category},products({state:n}){return n.products}},actions:{addProduct({state:n},e){n.products=[...n.products,e]},saveProduct({state:n},e){e.length>0&&localStorage.setItem("PRODUCT",JSON.stringify(e)),n.products=[...e],console.log("saveProduct: success ",e)},saveCategory({state:n},e){e.length>0&&localStorage.setItem("CATEGORY",JSON.stringify(e)),n.category=[...e],console.log("saveCategory: success ",e)}}});function Xl(n,{$f7:e,$update:t}){return function(r){var a=r.$,i=r.$h,l=r.$root,d=r.$f7,u=r.$f7route,f=r.$f7router,g=r.$theme,b=r.$update,w=r.$store;return i`
   <div id="app">
 
     <!-- Left panel with cover effect-->
@@ -513,10 +513,10 @@ ${u.toString()}`)}return a&&(typeof a=="string"?d+=`?${a}`:Object.keys(a).length
     <!-- Views/Tabs container -->
     <div class="views tabs safe-areas">
       <!-- Tabbar for switching views-tabs -->
-      <div class="toolbar toolbar-bottom tabbar-icons gradient-bg">
+      <div class="toolbar toolbar-bottom tabbar-icons">
         <div class="toolbar-inner">
           <a href="#view-home" class="tab-link tab-link-active">
-            <i class="icon f7-icons">square_list_fill</i>
+            <i class="icon f7-icons">menu</i>
           </a>
           <a href="#view-cart" class="tab-link">
             <i class="icon f7-icons ">cart_list_fill</i>
@@ -524,7 +524,6 @@ ${u.toString()}`)}return a&&(typeof a=="string"?d+=`?${a}`:Object.keys(a).length
           <a href="#view-settings" class="tab-link">
             <i class="icon f7-icons ">gear</i>
           </a> 
-
         </div>
       </div>
 
@@ -546,4 +545,4 @@ ${u.toString()}`)}return a&&(typeof a=="string"?d+=`?${a}`:Object.keys(a).length
 
 
   </div>
-`}}Xl.id="4db8ac193f";var Qm=new ir({name:"ZiZi Store",theme:"ios",el:"#app",component:Xl,store:mm,routes:gm});
+`}}Xl.id="08e13776aa";var Qm=new ir({name:"ZiZi Store",theme:"ios",el:"#app",component:Xl,store:mm,routes:gm});
